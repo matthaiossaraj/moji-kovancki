@@ -1,0 +1,153 @@
+body,html{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-align:center;
+}
+.clear {
+    clear:both;
+}
+#pageWrapper {
+    width:100%;
+    height:100%;
+    position:relative;
+    background:#ecf0f1;
+}
+#sideBar {
+    background:#2980b9;
+    width:200px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    color:#fff;
+}
+#wrapper {
+    padding-left:200px;
+    height:100%;
+}
+#header {
+    background:#3498db;
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+}
+#container {
+    padding:20px;
+    position:relative;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+ul li a{
+    text-decoration:none;
+}
+nav{
+    float:left;
+}
+#headerMenu{
+    margin-left:20px;
+}
+#headerMenu li{
+    float:left;
+    margin-right:20px;
+}
+#headerMenu li a{
+    text-decoration:none;
+    color:#fff;
+}
+#sideBar h3{
+    margin:20px 20px 10px 20px;
+    text-align:left;
+}
+.sideMenu {
+    width:200px;
+}
+.sideMenu li{
+    border-bottom:1px solid black;
+    padding:10px 20px 10px 30px;
+}
+li.last_li{
+    border-bottom:none;
+}
+.sideMenu li a{
+    color:#fff;
+}
+#dashBoard {
+    width:100%;
+    height:100%;
+}
+.dashBox {
+    float:left;
+    margin-right:40px;
+    margin-bottom:40px;
+    background:#fff;
+    padding:0 20px 20px 20px;
+}
+#dash_netWorth {
+    width:25%;
+    height:25%;
+}
+#dash_budget {
+    height:25%;
+    width:50%;
+}
+#dash_budget div{
+    float:left;
+    width:50%;
+}
+#dash_budget div div{
+    clear:left;
+    margin-bottom:20px;
+}
+#dash_accountList {
+    height:50%;
+    width:25%;
+}
+#dash_transList {
+    height:50%;
+    width:50%;
+}
+#dash_accountList ul li,#dash_netWorth ul li{
+    border-bottom:1px solid #000;
+    margin:0 -20px;
+    padding:5px 20px;
+    clear:right;
+    height:30px;
+}
+#dash_accountList ul li.accList_last,#dash_netWorth ul li.accList_last {
+    border-bottom:none;
+}
+.stateChange {
+    float:right;
+}
+.stateChange span{
+    margin-right:15px;
+}
+span.netWorth {
+    font-weight:bold;
+}
+table {
+    width:100%;
+    border-collapse:collapse;
+    text-align:left;
+}
+table th{
+    padding: 10px 8px;
+    border-bottom:2px solid #6678b1;
+}
+table td {
+    border-bottom: 1px solid #ccc;
+    padding: 6px 8px;
+}
+table tbody tr:hover {
+    color:#ff0;
+}
+.dwP {
+    color:red;
+}
