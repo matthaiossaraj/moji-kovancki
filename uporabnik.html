@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Moji Kovančki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/tables.css" />
+	<link rel="stylesheet" type="text/css" href="css/lists.css" />
+	<link rel="stylesheet" type="text/css" href="css/menus.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	<link rel="stylesheet" type="text/css" href="css/form.css" />
+    </head>
+    <body>
+	<div id="pageWrapper">
+	    <div id="sideBar">
+		<div id="userAccount">
+		    <a href="uporabnik.html"><img alt="user icon" src="images/user_icon.png"/>Matej Milošević</a>
+		</div>
+		<div id="settings">
+		    <a href="nastavitve.html"><img alt="settings icon" src="images/settings_icon.png"/></a>
+		</div>
+	    </div>
+	    <div id="wrapper">
+		<div id="header">
+		    <nav>
+			<ul class="menu" id="headerMenu">
+			    <li><a href="."><img alt="logo" src="images/logo.png" id="logo"/></a></li>
+			    <li><a href="racuni.html">Računi</a></li>
+			    <li><a href="prihodki.html">Prihodki</a></li>
+			    <li><a href="odhodki.html">Odhodki</a></li>
+			    <li><a href="budget.html">Budžet</a></li>
+			    <li><a href="kategorije.html">Kategorije</a></li>
+			    <li><a href="statistika.html">Statistika</a></li>
+			</ul>
+		    </nav>
+		</div>
+		<div id="container">
+		    <form id="userData">
+			<fieldset>
+			    <legend>Uporabniški podatki</legend>
+			    <div>
+				<label>Ime in priimek</label>
+				<input type="text" name="name" placeholder="Ime Priimek" value="Matej Milošević"/>
+			    </div>
+			    <div>
+				<label>E-mail</label>
+				<input type="email" name="email" placeholder="primer@primer.si" value="primer@primer.si"/>
+			    </div>
+			    <div>
+				<label>Potrditev e-maila</label>
+				<input type="email" name="emailRepeat" placeholder="primer@primer.si" value="primer@primer.si"/>
+			    </div>
+			</fieldset>
+			<fieldset>
+			    <legend>Sprememba gesla</legend>
+			    <div>
+				<label>Staro geslo</label>
+				<input type="password" name="passwordOld" value=""/>
+			    </div>
+			    <div>
+				<label>Novo geslo</label>
+				<input type="password" name="passwordNew" value=""/>
+			    </div>
+			    <div>
+				<label>Potrdi geslo</label>
+				<input type="password" name="passwordRepeat" value=""/>
+			    </div>
+			</fieldset>
+			<button>Potrdi</button>
+		    </form>
+		</div>
+	    </div>
+	</div>
+    </body>
+</html>

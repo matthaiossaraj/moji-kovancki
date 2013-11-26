@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Moji Kovančki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/tables.css" />
+	<link rel="stylesheet" type="text/css" href="css/lists.css" />
+	<link rel="stylesheet" type="text/css" href="css/menus.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+    </head>
+    <body>
+	<div id="pageWrapper">
+	    <div id="wrapper" class="first">
+		<div id="header">
+		    <nav>
+			<ul class="menu" id="headerMenu">
+			    <li><a href="."><img alt="logo" src="images/logo.png" id="logo"/></a></li>
+			    <li><a href="racuni.html">Računi</a></li>
+			    <li><a href="prihodki.html">Prihodki</a></li>
+			    <li><a href="odhodki.html">Odhodki</a></li>
+			    <li><a href="budget.html">Budžet</a></li>
+			    <li><a href="kategorije.html">Kategorije</a></li>
+			    <li><a href="statistika.html">Statistika</a></li>
+			</ul>
+		    </nav>
+		</div>
+		<div id="container">
+		    <div id="dashBoard" class="statistics">
+			<div id="dash_netWorth" class="dashBox">
+			    <h4>Neto stanje</h4>
+			    <ul>
+				<li><span>Sredstva</span><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
+				<li><span>Dolgovi</span><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
+				<li><span class="netWorth">Neto</span><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
+			    </ul>
+			</div>
+			<div id="dash_assetsPerc" class="dashBox">
+			    <h4>Razporeditev sredstev v %</h4>
+			    <div class="canvasDiv">
+				graf na html5 canvasu
+				<canvas width="120" height="120">
+				    Vaš brskalnik ne podpira prikaz grafa.
+				</canvas>
+			    </div>
+			    <div class="legend">
+				<ul>
+				    <li id="nlb"><div class="colorCode"></div><div class="label">NLB</div></li>
+				    <li id="nkbm"><div class="colorCode"></div><div class="label">NKBM</div></li>
+				    <li id="varcevanje"><div class="colorCode"></div><div class="label">Varčevanje</div></li>
+				</ul>
+			    </div>
+			</div>
+			<div id="dash_debtsPerc" class="dashBox">
+			    <h4>Razporeditev dolgov v %</h4>
+			    <div class="canvasDiv">
+				graf na html5 canvasu
+				<canvas width="120" height="120">
+				    Vaš brskalnik ne podpira prikaz grafa.
+				</canvas>
+			    </div>
+			    <div class="legend">
+				<ul>
+				    <li id="kredit"><div class="colorCode"></div><div class="label">Kredit</div></li>
+				    <li id="kartica"><div class="colorCode"></div><div class="label">Kartica</div></li>
+				    <li id="limit"><div class="colorCode"></div><div class="label">Limit</div></li>
+				</ul>
+			    </div>
+			</div>
+			<div id="dash_incomePerc" class="dashBox">
+			    <h4>Razporeditev prihodkov po kategorijah</h4>
+			    <div class="canvasDiv">
+				graf na html5 canvasu
+				<canvas width="120" height="120">
+				    Vaš brskalnik ne podpira prikaz grafa.
+				</canvas>
+			    </div>
+			    <div class="legend">
+				<ul>
+				    <li id="kredit"><div class="colorCode"></div><div class="label">Kredit</div></li>
+				    <li id="kartica"><div class="colorCode"></div><div class="label">Kartica</div></li>
+				    <li id="limit"><div class="colorCode"></div><div class="label">Limit</div></li>
+				</ul>
+			    </div>
+			</div>
+			<div id="dash_outcomePerc" class="dashBox">
+			    <h4>Razporeditev odhodkov po kategorijah</h4>
+			    <div class="canvasDiv">
+				graf na html5 canvasu
+				<canvas width="120" height="120">
+				    Vaš brskalnik ne podpira prikaz grafa.
+				</canvas>
+			    </div>
+			    <div class="legend">
+				<ul>
+				    <li id="kredit"><div class="colorCode"></div><div class="label">Kredit</div></li>
+				    <li id="kartica"><div class="colorCode"></div><div class="label">Kartica</div></li>
+				    <li id="limit"><div class="colorCode"></div><div class="label">Limit</div></li>
+				</ul>
+			    </div>
+			</div>
+			<div id="dash_totalTrend" class="dashBox">
+			    <h4>Gibanje skupnega stanja v zadnjih mesecih</h4>
+			    <div>
+				graf na html5 canvasu
+				<canvas width="120" height="120">
+				    Vaš brskalnik ne podpira prikaz grafa.
+				</canvas>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </body>
+</html>

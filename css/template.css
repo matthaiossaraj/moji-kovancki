@@ -2,6 +2,7 @@ body,html{
     padding:0;
     margin:0;
     height:100%;
+    font-family:"Lucida Sans Unicode", Lucida Grande, sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
     text-align:center;
@@ -11,9 +12,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 #pageWrapper {
     width:100%;
-    height:100%;
+    min-height:100%;
     position:relative;
     background:#ecf0f1;
+    min-width:1000px;
+    overflow:auto;
 }
 #sideBar {
     background:#2980b9;
@@ -29,6 +32,9 @@ h1,h2,h3,h4,h5,h6 {
     padding-left:200px;
     height:100%;
 }
+#wrapper.first {
+    padding-left:0;
+}
 #header {
     background:#3498db;
     height:50px;
@@ -39,45 +45,31 @@ h1,h2,h3,h4,h5,h6 {
     padding:20px;
     position:relative;
 }
-ul{
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-ul li a{
-    text-decoration:none;
-}
-nav{
-    float:left;
-}
-#headerMenu{
-    margin-left:20px;
-}
-#headerMenu li{
-    float:left;
+#controls {
+    float:right;
+    margin-top:10px;
     margin-right:20px;
 }
-#headerMenu li a{
+#settings {
+    position:absolute;
+    left:10px;
+    bottom:10px;
+}
+#userAccount {
+    padding:10px;
+}
+#userAccount a {
+    color:#fff;
     text-decoration:none;
-    color:#fff;
 }
-#sideBar h3{
-    margin:20px 20px 10px 20px;
-    text-align:left;
+#userAccount img{
+    padding-right:10px;
 }
-.sideMenu {
-    width:200px;
+#panelIcon {
+    float:left;
+    margin-top:10px;
 }
-.sideMenu li{
-    border-bottom:1px solid black;
-    padding:10px 20px 10px 30px;
-}
-li.last_li{
-    border-bottom:none;
-}
-.sideMenu li a{
-    color:#fff;
-}
+
 #dashBoard {
     width:100%;
     height:100%;
@@ -88,6 +80,7 @@ li.last_li{
     margin-bottom:40px;
     background:#fff;
     padding:0 20px 20px 20px;
+    box-shadow: 3px 3px 1px #bdc3c7;
 }
 #dash_netWorth {
     width:25%;
@@ -101,9 +94,17 @@ li.last_li{
     float:left;
     width:50%;
 }
+#dashUsedBudget {
+    color:#27ae60;
+}
 #dash_budget div div{
     clear:left;
-    margin-bottom:20px;
+    margin-bottom:10px;
+    line-height:25px;
+}
+#dash_budget div div span{
+    padding-left:5px;
+    font-weight:bold;
 }
 #dash_accountList {
     height:50%;
@@ -114,14 +115,15 @@ li.last_li{
     width:50%;
 }
 #dash_accountList ul li,#dash_netWorth ul li{
-    border-bottom:1px solid #000;
+    border-bottom:1px dotted #bdc3c7;
     margin:0 -20px;
     padding:5px 20px;
     clear:right;
     height:30px;
+    line-height:30px;
 }
-#dash_accountList ul li.accList_last,#dash_netWorth ul li.accList_last {
-    border-bottom:none;
+#dash_accountList ul li:hover {
+    color:gray;
 }
 .stateChange {
     float:right;
@@ -132,22 +134,41 @@ li.last_li{
 span.netWorth {
     font-weight:bold;
 }
-table {
-    width:100%;
-    border-collapse:collapse;
-    text-align:left;
-}
-table th{
-    padding: 10px 8px;
-    border-bottom:2px solid #6678b1;
-}
-table td {
-    border-bottom: 1px solid #ccc;
-    padding: 6px 8px;
-}
-table tbody tr:hover {
-    color:#ff0;
+.upP {
+    color:#27ae60;
 }
 .dwP {
-    color:red;
+    color:#d35400;
+}
+
+.canvasDiv {
+    float:left;
+    width:200px;
+}
+.legend {
+    float:left;
+    width:150px;
+}
+.legend ul li {
+    height:30px;
+    margin:10px 0;
+    clear:left;
+}
+.colorCode {
+    height:15px;
+    width:15px;
+    background:#3498db;
+    float:left;
+}
+.label {
+    float:left;
+    margin-left:5px;
+}
+
+.statistics .dashBox {
+    width:25%;
+    height:25%;
+}
+#dash_totalTrend {
+    width:84%;
 }

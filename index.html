@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title></title>
+	<title>Moji Kovančki</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/tables.css" />
+	<link rel="stylesheet" type="text/css" href="css/lists.css" />
+	<link rel="stylesheet" type="text/css" href="css/menus.css" />
 	<link rel="stylesheet" type="text/css" href="css/template.css" />
     </head>
     <body>
 	<div id="pageWrapper">
-	    <div id="sideBar">
-		<nav>
-		    <h3>TRR</h3>
-		    <ul class="menu sideMenu">
-			<li><a href="">NLB</a></li>
-			<li><a href="">NKBM</a></li>
-			<li class="last_li"><a href="">A Banka</a></li>
-		    </ul>
-		    <h3>Varčevalni</h3>
-		    <ul class="menu sideMenu">
-			<li class="last_li"><a href="">NLB</a></li>
-		    </ul>
-		</nav>
-	    </div>
-	    <div id="wrapper">
+	    <div id="wrapper" class="first">
 		<div id="header">
-		    <span style="float:left;">Side</span>
 		    <nav>
 			<ul class="menu" id="headerMenu">
-			    <li><a href=".">Logo</a></li>
-			    <li><a href="">Računi</a></li>
-			    <li><a href="">Prihodki</a></li>
-			    <li><a href="">Odhodki</a></li>
-			    <li><a href="">Budžet</a></li>
-			    <li><a href="">Kategorije</a></li>
-			    <li><a href="">Statistika</a></li>
+			    <li><a href="."><img alt="logo" src="images/logo.png" id="logo"/></a></li>
+			    <li><a href="racuni.html">Računi</a></li>
+			    <li><a href="prihodki.html">Prihodki</a></li>
+			    <li><a href="odhodki.html">Odhodki</a></li>
+			    <li><a href="budget.html">Budžet</a></li>
+			    <li><a href="kategorije.html">Kategorije</a></li>
+			    <li><a href="statistika.html">Statistika</a></li>
 			</ul>
 		    </nav>
 		</div>
@@ -41,32 +29,32 @@
 			<div id="dash_netWorth" class="dashBox">
 			    <h4>Neto stanje</h4>
 			    <ul>
-				<li><span>Sredstva</span><div class="stateChange"><span>150 €</span><img src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
-				<li><span>Dolgovi</span><div class="stateChange"><span>150 €</span><img src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
-				<li class="accList_last"><span class="netWorth">Neto</span><div class="stateChange"><span>150 €</span><img src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
+				<li><span>Sredstva</span><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
+				<li><span>Dolgovi</span><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
+				<li><span class="netWorth">Neto</span><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
 			    </ul>
 			</div>
 			<div id="dash_budget" class="dashBox">
 			    <h4>Budžet</h4>
 			    <div>
-				<canvas width="120px" height="120px">
+				graf na html5 canvasu
+				<canvas width="120" height="120">
 				    Vaš brskalnik ne podpira prikaz grafa.
 				</canvas>
 			    </div>
 			    <div>
 				<div>Budžet <br/><span>150 €</span></div>
-				<div>Do sedaj porabljeno <br/><span>150 €</span></div>
+				<div>Do sedaj porabljeno <br/><span id="dashUsedBudget">150 €</span></div>
 			    </div>
 			</div>
 			<div class="clear"></div>
 			<div id="dash_accountList" class="dashBox">
 			    <h4>Stanje na računih</h4>
 			    <ul>
-				<li><span>Ime</span><div class="stateChange"><span>150 €</span><img src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
-				<li><span>Ime</span><div class="stateChange"><span>150 €</span><img src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
-				<li><span>Ime</span><div class="stateChange"><span>150 €</span><img src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
-				<li><span>Ime</span><div class="stateChange"><span>150 €</span><img src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
-				<li class="accList_last"><span>Ime</span><div  class="stateChange"><span>150 €</span><img src="images/up_icon.png" /> 15 %</div></li>
+				<li><a href="racun.html">NLB</a><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
+				<li><a href="racun.html">NKBM</a><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
+				<li><a href="racun.html">Varčevalni</a><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/down_icon.png" /><span class="dwP"> 15%</span></div></li>
+				<li><a href="racun.html">Mastercard</a><div class="stateChange"><span>150 €</span><img alt="arrow" src="images/up_icon.png" /><span class="upP"> 15%</span></div></li>
 			    </ul>
 			</div>
 			<div id="dash_transList" class="dashBox">
@@ -83,51 +71,51 @@
 				<tbody>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				    <tr>
 					<td>27.10.2013</td>
-					<td>Hrana</td>
+					<td><a href="kategorija.html">Hrana</a></td>
 					<td>7 €</td>
-					<td>NLB</td>
+					<td><a href="racun.html">NLB</a></td>
 				    </tr>
 				</tbody>
 			    </table>
